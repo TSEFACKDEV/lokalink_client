@@ -40,6 +40,14 @@ const Navbar = () => {
               Équipements
             </Link>
             <Link
+              to="/dashboard"
+              className={`text-sm font-semibold transition-colors ${
+                isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-primary'
+              }`}
+            >
+              Dashboard
+            </Link>
+            <Link
               to="/contact"
               className={`text-sm font-semibold transition-colors ${
                 isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-primary'
@@ -106,6 +114,13 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Équipements
+            </Link>
+            <Link
+              to="/dashboard"
+              className="block px-4 py-3 text-base font-medium hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Dashboard
             </Link>
             <Link
               to="/contact"

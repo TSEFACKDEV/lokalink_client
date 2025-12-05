@@ -15,6 +15,7 @@ import TermsOfServicePage from './pages/TermsOfServicePage';
 import AddProductPage from './pages/AddProductPage';
 import BorrowEquipmentPage from './pages/BorrowEquipmentPage';
 import EquipementDetailPage from './pages/EquipementDetailPage';
+import DashboardPage from './pages/DashboardPage';
 
 function App() {
   const { isDarkMode } = useAppStore();
@@ -43,6 +44,7 @@ function App() {
             <Route path="/terms-of-service" element={<TermsOfServicePage />} />
             <Route path="/add-product" element={<AddProductPage />} />
             <Route path="/borrow-equipment/:id" element={<BorrowEquipmentPage />} />
+            <Route path="/dashboard" element={<DashboardPage />} />
           </Routes>
         </main>
 
