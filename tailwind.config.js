@@ -11,13 +11,14 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
-        primary: '#F25F3A', // Genuka-like vibrant orange
         primaryHover: '#E04F2B',
-        dark: '#0F172A',    // Deep navy/black for better contrast
-        light: '#FFFFFF',
+        dark: '#0F172A',    
+        primary: '#F7931E',
+        secondary: '#333333',
+        light: '#F2F2F2',
         accent: '#FF9F1C',
         grayText: '#4B5563',
-        surface: '#F9FAFB', // Light gray background for sections
+        surface: '#F9FAFB', 
 
         gray: {
           50: '#f9fafb',

@@ -6,3 +6,4 @@ export { default as PrivacyPolicyPage } from './PrivacyPolicyPage';
 export { default as TermsOfServicePage } from './TermsOfServicePage';
 export { default as AddProductPage } from './AddProductPage';
 export { default as BorrowEquipmentPage } from './BorrowEquipmentPage';
+export { default as DashboardPage } from './DashboardPage';
