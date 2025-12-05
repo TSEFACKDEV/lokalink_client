@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --color-primary: #F25F3A;
+  --color-primaryHover: #E04F2B;
+  --color-dark: #0F172A;
+  --color-light: #FFFFFF;
+  --color-accent: #FF9F1C;
+  --color-grayText: #4B5563;
+  --color-surface: #F9FAFB;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  color-scheme: light dark;
+  @apply text-gray-800 bg-white;
+}
+
+a {
+  @apply transition-colors duration-200;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold tracking-tight text-dark;
+}
+
+button {
+  @apply transition-all duration-200 cursor-pointer active:scale-95;
+}
+
+.btn-primary {
+  @apply bg-primary text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-primary/30 hover:bg-primaryHover hover:shadow-primary/40 hover:-translate-y-0.5 transition-all;
+}
+
+.btn-secondary {
+  @apply bg-white text-dark border border-gray-200 px-6 py-3 rounded-xl font-semibold hover:bg-gray-50 hover:border-gray-300 transition-all;
+}
+
+/* Animations personnalisées */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-in-out;
+}
+
+.slide-in-up {
+  animation: slideInUp 0.5s ease-out;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

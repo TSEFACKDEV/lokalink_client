@@ -1,0 +1,8 @@
+export { default as HomePage } from './HomePage';
+export { default as EquipementsPage } from './EquipementsPage';
+export { default as EquipementDetailPage } from './EquipementDetailPage';
+export { default as ContactPage } from './ContactPage';
+export { default as PrivacyPolicyPage } from './PrivacyPolicyPage';
+export { default as TermsOfServicePage } from './TermsOfServicePage';
+export { default as AddProductPage } from './AddProductPage';
+export { default as BorrowEquipmentPage } from './BorrowEquipmentPage';
